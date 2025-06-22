@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Zomer Video</title>
+  <meta charset="UTF-8">
+  <title>Autoplay Video</title>
   <style>
-    html, body {
-      margin: 0; padding: 0; height: 100%;
+    body {
+      margin: 0;
       background: black;
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100vh;
     }
     video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      max-width: 100%;
+      height: auto;
     }
   </style>
 </head>
 <body>
   <video autoplay loop muted playsinline>
-    <source src="videos/Zomer.mp4" type="video/mp4" />
-    Je browser ondersteunt deze video niet.
+    <source src="video.mp4" type="video/mp4">
+    Je browser ondersteunt geen video.
   </video>
 </body>
 </html>
